@@ -1,0 +1,158 @@
+/* Global Styles */
+*{
+    color: #fff;
+    font-family: "Cairo", sans-serif;
+}
+textarea,
+input{
+    width: 100%;
+    height: 50px;
+    color: black;
+}
+
+label{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    white-space: nowrap;
+}
+/* section 1 */
+.section-title{
+    margin-top: 130px;
+}
+.section-title .title{
+    text-align: center;
+}
+.section-title .title h1{
+    font-weight: 400;
+    font-size: 1.93rem;
+    white-space: nowrap;
+}
+/* section 2 */
+
+.input-and-image{
+    display: grid;
+    place-items: center;
+}
+form{
+    padding-inline: 20px;
+    background-color: rgb(0, 0, 0 , 0.6);
+    margin-inline: 17px;
+    border-radius: 9px;
+    max-width: 450px;
+}
+
+
+.bg-input {
+    background: url('/static/image/Consultant.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 110vh;
+    margin-block: 40px;
+}
+.bg-input.bg-input-height{
+    height: 160px;
+}
+
+.form-group{
+    margin-block: 30px;
+}
+.invalid-feedback{
+    background-color: #8B0000;
+    height: 60px;
+    padding-block: 15px;
+    padding-inline: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.invalid-feedback.active{
+    display: block;
+}
+.input-and-image .btn{
+    background-color: hsl(40, 64%, 50%);
+    font-size: 2rem;
+    margin-block: 20px;
+    width: 130px;
+    height: 70px;
+    border-radius: 6px;
+}
+.textarea{
+    height: 100px;
+    padding: 10px;
+}
+
+
+
+
+
+
+@media (min-width: 768px){
+    form{
+        width: 50%;
+        margin: 50px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .bg-input{
+        height: 75vh;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        width: 100%;
+        max-width: 650px;
+    }
+    .form-group{
+        width: calc(100% / 2 - 20px);
+    }
+    .form-group.active{
+        display: grid;
+        margin: auto;
+        width: calc(100%);
+    }
+    .bg-input{
+        padding-inline: 250px;
+    }
+}
+
+
+
+
+@media (min-width:1440px){
+    .bg-input{
+        height: 80vh;
+    }
+    form{
+        
+        width: calc(100% / 2);
+        max-width: 850px;
+    }
+}
+@media (min-width:2560px){
+    .section-title .title h1{
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    label{
+        font-size: 3rem;
+    }
+    input{
+        height: 90px;
+    }
+    form{
+        max-width: 900px;
+    }
+    
+    .textarea{
+        height: 150px;
+    }
+    .textarea::placeholder{
+        font-size: 2.4rem;
+    }
+    .bg-input{
+        height: 50vh;
+    }
+}

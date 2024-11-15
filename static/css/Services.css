@@ -1,0 +1,110 @@
+
+img{
+    width: calc(100%);
+}
+
+.image_and_text hr{
+    width: 100%;
+    border: 2.4px solid white;
+
+}
+
+/* Section 1 image_and_text */
+.image_and_text .container .text{
+    padding-inline: 11px;
+    text-align: center;
+}
+.image_and_text .container .text .address{
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.image_and_text .container .text p{
+    font-size: 1.2rem;
+}
+
+.image_and_text .container .btn{
+    background-color: var(--background-button);
+    height: 40px;
+    padding-inline: 30px;
+    border-radius: 9px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 25px;
+}
+
+/* Section 2 section_services */
+.section_services .container .text{
+    text-align: center;
+    padding-inline: 14px;
+    padding-block: 20px;
+}
+.section_services .container .text address{
+    font-size: 2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.section_services .container .text p{
+    font-size: 1.3rem;
+}
+.section_services .container .card-services{
+    padding-inline: 20px;
+    padding-block: 20px;
+    text-align: center;
+}
+.section_services .container .card-services h1{
+    font-size: 1.7rem;
+}
+
+.section_services .container .card-services p{
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 768px){
+    /* Section 1 image_and_text */
+    .image_and_text .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        direction: rtl;
+    }
+    .image_and_text .container .image img{
+        width: calc(100% + 160px);
+    }
+    .image_and_text .container .text{
+        margin-left: -150px;
+    }
+    .image_and_text .container .text p{
+        margin-inline: 190px;
+    }
+
+    /* Section 2 section_services */
+    .section_services .container .card{
+        display: flex;
+        padding-inline: 50px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .section_services .container .card-services{
+        flex: 1 1 calc(33.333% - 16px);
+        box-sizing: border-box;
+    }
+    .section_services .container .card-services .image{
+        width: 400px;
+        margin: auto;
+    }
+    .section_services .container .card-services .image img{
+        height: 350px;
+    }
+    
+
+
+
+}
+
+@media (min-width: 1024px){
+    
+}
